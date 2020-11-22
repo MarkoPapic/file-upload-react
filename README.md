@@ -1,5 +1,7 @@
 # React File Uploader
 
+![npm (scoped)](https://img.shields.io/npm/v/@markopapic/file-upload-react)
+
 A React component that allows you to upload files to a specified server, with the progress indicator.
 
 ## Installation
