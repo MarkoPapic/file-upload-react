@@ -23,7 +23,7 @@ import FileUpload from "@markopapic/file-upload-react";
 
 ### Configuration
 
-You can configure the behavior of the file uploader, by passing the following props:
+You can configure the behavior of the file uploader by passing the following props:
 
 **allowMultiple** - Specifies if selecting multiple files should be allowed. Default: `false`.
 

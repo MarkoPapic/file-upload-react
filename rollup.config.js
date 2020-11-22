@@ -1,5 +1,6 @@
 import babel from "@rollup/plugin-babel";
-import closureCompiler from "@ampproject/rollup-plugin-closure-compiler";
+import replace from "@rollup/plugin-replace";
+import { terser } from "rollup-plugin-terser";
 
 export default {
     input: "src/index.js",
@@ -8,11 +9,10 @@ export default {
         format: "es"
     },
     plugins: [
+        replace({ 'process.env.NODE_ENV': "production" }),
+        terser(),
         babel({
             exclude: 'node_modules/**'
-        }),
-        closureCompiler({
-            compilation_level: "ADVANCED_OPTIMIZATIONS"
         })
     ]
 };
