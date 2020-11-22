@@ -1,10 +1,11 @@
 {
   "name": "@markopapic/file-upload-react",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A React component for uploading files.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.js",
+    "publish-npm": "rollup -c rollup.config.js && npm publish"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/MarkoPapic/file-upload-react/issues"
   },
-  "homepage": "https://github.com/MarkoPapic/file-upload-react#readme"
+  "homepage": "https://github.com/MarkoPapic/file-upload-react#readme",
+  "devDependencies": {
+    "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
+    "@babel/core": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@rollup/plugin-babel": "^5.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  }
 }
