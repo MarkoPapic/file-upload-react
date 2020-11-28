@@ -1,6 +1,6 @@
 # React File Uploader
 
-![npm (scoped)](https://img.shields.io/npm/v/@markopapic/file-upload-react) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@markopapic/file-upload-react)
+![npm (scoped)](https://img.shields.io/npm/v/@markopapic/file-upload-react) ![David](https://img.shields.io/david/markopapic/file-upload-react) ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@markopapic/file-upload-react)
 
 A React component that allows you to upload files to a specified server, with the progress indicator.
 
